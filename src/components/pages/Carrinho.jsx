@@ -54,7 +54,7 @@ function Carrinho() {
 
         const data = await response.json()
         setNotas(data)
-        setIsBelow(data.total_bruto < data.limite)
+        setIsBelow(data.total_bruto <= data.limite)
       } catch (err) {
         console.error("Erro ao buscar pedido")
         alert(err)

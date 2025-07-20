@@ -1,7 +1,36 @@
 {
   "empresas": [
+    {
+      "id": "1081",
+      "faturamento": "10000",
+      "empresa": "Empresa Teste",
+      "cnpj": "11111111111111",
+      "ramo": "Servicos",
+      "limite": 5000
+    }
   ],
   "pedidos": [
-    
+    {
+      "id": "dfa8",
+      "empresa": "Empresa Teste",
+      "cnpj": "11111111111111",
+      "limite": 5000,
+      "notas_fiscais": [
+        {
+          "numero": "1556421315",
+          "valor_bruto": 2000,
+          "valor_liquido": 1972.914323641356,
+          "vencimento": "30-07-2025"
+        },
+        {
+          "numero": "2222",
+          "valor_bruto": 3000,
+          "valor_liquido": 2959.371485462034,
+          "vencimento": "30-07-2025"
+        }
+      ],
+      "total_bruto": 5000,
+      "total_liquido": 4932.28580910339
+    }
   ]
 }

@@ -20,7 +20,7 @@ function CardNota({ index, numero, valorBruto, valor, data, handleRemove }) {
   }
 
   return (
-    <Card sx={{ width: 1 }}>
+    <Card sx={{ width: 1, p:1}}>
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant={isMobile ? 'h6' : 'h5'} component="div" className={styles.headerCard}>
@@ -44,7 +44,7 @@ function CardNota({ index, numero, valorBruto, valor, data, handleRemove }) {
         </CardContent>
       </CardActionArea>
       <CardActions >
-        <Button sx={{ mx: 'auto' }} variant='contained' color="error" onClick={remove}>
+        <Button  sx={{...(isMobile ? {mx:'auto'} : {ml:'auto'})}} variant='contained' color="error" onClick={remove} size='small'>
           <Stack direction='row' spacing={.3} sx={{ p: .5 }}> <p>Remover</p> <DeleteIcon /> </Stack>
         </Button>
       </CardActions>

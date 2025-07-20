@@ -45,6 +45,10 @@ main {
 }
 
 @media screen and (max-width: 750px) {
+  .headerCarrinho{
+    display: flex;
+    flex-direction: column;
+  }
   .headerCarrinho h1 {
     width: 100%;
     text-align: center;

@@ -1,41 +1,91 @@
-<h1 align="center" style="font-weight: bold;">💻 Desafio Técnico — Frontend (React)</h1>
+<h1 align="center" style="font-weight: bold;">💻 Desafio Técnico Frontend</h1>
 
 <p align="center">
- <a href="#tech">Tecnologias</a> • 
- <a href="#started">Inicialização</a> • 
+ <a href="#-sobre-o-projeto">Sobre</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-layout">Layout</a> • 
+ <a href="#-como-executar">Como Executar</a> •
 </p>
 
-<p align="center">
-    <b> Projeto sobre simulação de antecipação de crédito para uma empresa. Ou seja, se uma empresa recebeu uma nota fiscal, mas o vencimento dela está muito longe, e ela precisa de dinheiro, ela pode pedir para nossa empresa uma antecepação pagando uma taxa em relação ao valor original </b>
-</p>
+---
 
-<h2 id="layout">🎨 Layout</h2>
+<h2 id="-sobre-o-projeto">ℹ️ Sobre o Projeto</h2>
 
-<p align="center">
-    <img src="src/assets/imgs/LoginMobile.jpg" alt="Tela de login mobile" width="400px">
-    <img src="src/assets/imgs/LoginDesktop.jpg" alt="Tela de login desktop" width="400px">
-</p>
+Sistema que simula antecipação de crédito para empresas, permitindo que recebam valores de notas fiscais antecipadamente, pagando uma taxa sobre o valor original.
 
-<h2 id="technologies">💻 Tecnologias</h2>
+**Principais características:**
+- Cadastro de empresas
+- Cadastro de notas fiscais
+- Simulação de antecipação
+- Cálculo automático de taxas
+- Interface responsiva
 
+---
+
+<h2 id="-layout">🎨 Layout</h2>
+
+<div align="center">
+  <h3>Versão Desktop</h3>
+  <h4>Tela de login</h4>
+  <img src="src/assets/imgs/LoginDesktop.jpg" alt="Tela de login desktop" width="600">
+  <h4>Tela de cadastro</h4>
+  <img src="src/assets/imgs/CadastroDesktop.jpg" alt="Tela de cadastro desktop" width="600">
+  <h4>Tela de cadastro de notas fiscais</h4>
+  <img src="src/assets/imgs/NotaDesktop.jpg" alt="Tela de adicionar nota fiscal desktop" width="600">
+  <h4>Carrinho</h4>
+  <img src="src/assets/imgs/CarrinhoDesktop.jpg" alt="Tela de adicionar nota fiscal desktop" width="600">
+  <h4>Modal final</h4>
+  <img src="src/assets/imgs/FinalDesktop.jpg" alt="Tela final da simulação" width="600">
+
+  <h3>Versão Mobile</h3>
+  <h4>Tela login</h4>
+  <img src="src/assets/imgs/LoginMobile.jpg" alt="Tela de login mobile" width="300">
+  <h4>Tela Cadastro</h4>
+  <img src="src/assets/imgs/CadastroMobile.jpg" alt="Tela de cadastro mobile" width="300">
+  <h4>Tela cadasto de notas</h4>
+  <img src="src/assets/imgs/notaMobile.jpg" alt="Tela de cadastro de notas mobile" width="300">
+  <h4>Carrinho</h4>
+  <img src="src/assets/imgs/CarrinhoMobile.jpg" alt="Tela de login mobile" width="300">
+  <h4>Modal final</h4>
+  <img src="src/assets/imgs/FinalMobile.jpg" alt="Tela do modal final mobile" width="300">
+</div>
+
+---
+
+<h2 id="-tecnologias">🛠 Tecnologias</h2>
+
+**Frontend:**
 - ReactJS
+- Material UI (MUI)
+- Context API
+
+**Backend (Mock):**
 - json-server
-- material UI
 
-<h2 id="started">🚀 Iniciando o projeto</h2>
+---
 
-<h3>Pre-requisitos</h3>
+<h2 id="-como-executar">🚀 Como Executar</h2>
 
-- [NodeJS](https://github.com/)
-- [Git 2](https://github.com)
+### Pré-requisitos
+- Node.js (v18+)
+- npm ou yarn
+- Portas 5000 (backend) e 5173 (frontend) disponíveis
 
-<h3>Iniciando</h3>
-
-As portas 5000 e 5173 serão usadas, então precisam estar disponíveis. 
-
+### Instalação
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/Desafio.git
 cd Desafio
-npm run backend
-npm run dev
+
+# Instale as dependências
+npm install
 ```
 
+### Execução
+
+```bash
+#Em 1 terminal
+npm run backend
+#Em outro terminal
+npm run dev
+```
