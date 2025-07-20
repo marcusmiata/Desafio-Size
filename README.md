@@ -1,59 +1,41 @@
-<h1 align="center" style="font-weight: bold;">Project name 💻</h1>
+<h1 align="center" style="font-weight: bold;">💻 Desafio Técnico — Frontend (React)</h1>
 
 <p align="center">
- <a href="#tech">Technologies</a> • 
- <a href="#started">Getting Started</a> • 
-  <a href="#colab">Collaborators</a> •
- <a href="#contribute">Contribute</a>
+ <a href="#tech">Tecnologias</a> • 
+ <a href="#started">Inicialização</a> • 
 </p>
 
 <p align="center">
-    <b>Simple description of what your project do or how to use it</b>
-</p>
-
-<p align="center">
-     <a href="PROJECT__URL">📱 Visit this Project</a>
+    <b> Projeto sobre simulação de antecipação de crédito para uma empresa. Ou seja, se uma empresa recebeu uma nota fiscal, mas o vencimento dela está muito longe, e ela precisa de dinheiro, ela pode pedir para nossa empresa uma antecepação pagando uma taxa em relação ao valor original </b>
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+    <img src="src/assets/imgs/LoginMobile.jpg" alt="Tela de login mobile" width="400px">
+    <img src="src/assets/imgs/LoginDesktop.jpg" alt="Tela de login desktop" width="400px">
 </p>
 
-<h2 id="technologies">💻 Technologies</h2>
+<h2 id="technologies">💻 Tecnologias</h2>
 
-- list of all technologies you used
-- react
-- styled components
-- another example
+- ReactJS
+- json-server
+- material UI
 
-<h2 id="started">🚀 Getting started</h2>
+<h2 id="started">🚀 Iniciando o projeto</h2>
 
-Here you describe how to run your project locally
-
-<h3>Prerequisites</h3>
-
-Here you list all prerequisites necessary for running your project. For example:
+<h3>Pre-requisitos</h3>
 
 - [NodeJS](https://github.com/)
 - [Git 2](https://github.com)
 
-<h3>Cloning</h3>
+<h3>Iniciando</h3>
 
-How to clone your project
-
-```bash
-git clone your-project-url-in-github
-```
-
-<h3>Starting</h3>
-
-How to start your project
+As portas 5000 e 5173 serão usadas, então precisam estar disponíveis. 
 
 ```bash
-cd project-name
-npm some-command-to-run
+cd Desafio
+npm run backend
+npm run dev
 ```
 
