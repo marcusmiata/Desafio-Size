@@ -29,25 +29,25 @@ Sistema que simula antecipação de crédito para empresas, permitindo que receb
   <h4>Tela de login</h4>
   <img src="src/assets/imgs/LoginDesktop.jpg" alt="Tela de login desktop" width="600">
   <h4>Tela de cadastro</h4>
-  <img src="src/assets/imgs/CadastroDesktop.jpg" alt="Tela de cadastro desktop" width="600">
+  <img src="src/assets/imgs/cadastroDesktop.jpg" alt="Tela de cadastro desktop" width="600">
   <h4>Tela de cadastro de notas fiscais</h4>
-  <img src="src/assets/imgs/NotaDesktop.jpg" alt="Tela de adicionar nota fiscal desktop" width="600">
+  <img src="src/assets/imgs/notaDesktop.jpg" alt="Tela de adicionar nota fiscal desktop" width="600">
   <h4>Carrinho</h4>
-  <img src="src/assets/imgs/CarrinhoDesktop.jpg" alt="Tela de adicionar nota fiscal desktop" width="600">
+  <img src="src/assets/imgs/carrinhoDesktop.jpg" alt="Tela de adicionar nota fiscal desktop" width="600">
   <h4>Modal final</h4>
-  <img src="src/assets/imgs/FinalDesktop.jpg" alt="Tela final da simulação" width="600">
+  <img src="src/assets/imgs/finalDesktop.jpg" alt="Tela final da simulação" width="600">
 
   <h3>Versão Mobile</h3>
   <h4>Tela login</h4>
   <img src="src/assets/imgs/LoginMobile.jpg" alt="Tela de login mobile" width="300">
   <h4>Tela Cadastro</h4>
-  <img src="src/assets/imgs/CadastroMobile.jpg" alt="Tela de cadastro mobile" width="300">
+  <img src="src/assets/imgs/cadastroMobile.jpg" alt="Tela de cadastro mobile" width="300">
   <h4>Tela cadasto de notas</h4>
   <img src="src/assets/imgs/notaMobile.jpg" alt="Tela de cadastro de notas mobile" width="300">
   <h4>Carrinho</h4>
-  <img src="src/assets/imgs/CarrinhoMobile.jpg" alt="Tela de login mobile" width="300">
+  <img src="src/assets/imgs/carrinhoMobile.jpg" alt="Tela de login mobile" width="300">
   <h4>Modal final</h4>
-  <img src="src/assets/imgs/FinalMobile.jpg" alt="Tela do modal final mobile" width="300">
+  <img src="src/assets/imgs/finalMobile.jpg" alt="Tela do modal final mobile" width="300">
 </div>
 
 ---
