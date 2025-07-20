@@ -1,0 +1,10 @@
+.containerCadastro {
+  padding: 1em;
+  margin: 6em auto;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

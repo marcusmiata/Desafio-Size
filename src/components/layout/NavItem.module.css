@@ -1,0 +1,32 @@
+.containerItem {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.containerItem a {
+  display: inline-block;
+  margin-right: 1em;
+  text-decoration: none;
+  color: black;
+  padding: .5em;
+  white-space: nowrap;
+}
+
+.containerItem a:hover {
+  border-bottom: 1px solid black;
+}
+
+.containerItem a.open {
+  margin-right: 0em;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 1em;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.containerItem a.open:hover {
+  background-color: greenyellow;
+  color: white;
+  border: 1px solid black;
+}

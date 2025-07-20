@@ -1,0 +1,8 @@
+.headerCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  color: green;
+}
