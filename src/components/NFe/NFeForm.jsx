@@ -55,6 +55,11 @@ function NfeForm({ handleSubmit }) {
   }
 
   function handleChange(e) {
+    if(e.target.name === 'valor' && e.target.value < 0){
+      alert('não colocar valores negativos')
+      e.target.value = 0
+      return
+    }
     setNfe(prev => ({
       ...prev,
       [e.target.name]: e.target.value

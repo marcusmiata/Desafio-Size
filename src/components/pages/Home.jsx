@@ -26,37 +26,39 @@ function Home() {
       setTimer(true)
       setTimeout(() => {
         setTimer(false)
-      }, 50000)
+      }, 5000)
     }
   }, [])
 
-  function entrar(cnpj) {
-    fetch(`http://localhost:5000/empresas?cnpj=${cnpj}`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(response => response.json())
-      .then(dados => {
-        if (dados.length > 0) {
-          const empresa = dados[0]
-          const userData = {
-            empresa: empresa.empresa,
-            cnpj: empresa.cnpj,
-            limite: empresa.limite
-          }
-          login(userData)
-          navigate('/cadastrarNfe')
-        } else {
-          setMessage('Empresa deste CNPJ não está cadastrada')
-          setType('error')
-          setTimer(true)
-          setTimeout(() => {
-            setTimer(false)
-          }, 3000)
+  const entrar = async (cnpj) => {
+    try{
+      const response = await fetch(`http://localhost:5000/empresas?cnpj=${cnpj}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
         }
-      }).catch(err => console.log(err))
+      })
+      const data = await response.json()
+      if (data.length > 0) {
+        const empresa = data[0]
+        const userData = {
+          empresa: empresa.empresa,
+          cnpj: empresa.cnpj,
+          limite: empresa.limite
+        }
+        login(userData)
+        navigate('/cadastrarNfe')
+      } else {
+        setMessage('Empresa deste CNPJ não está cadastrada')
+        setType('error')
+        setTimer(true)
+        setTimeout(() => {
+          setTimer(false)
+        }, 3000)
+      }
+    } catch(err)  {
+      throw new Error(err)
+    }
   }
 
   return (

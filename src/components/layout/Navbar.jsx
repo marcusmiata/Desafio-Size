@@ -62,19 +62,32 @@ function Navbar() {
   }
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box onClick={handleDrawerToggle}>
       <Typography variant="h6" sx={{ my: 2 }}>
         <Logo />
       </Typography>
       <Divider />
-      <List>
+      <List sx={{textAlign:'center'}}>
         {navItems.map((item, index) => (
           <ListItem key={index} disablePadding>
-            <Link className={styles.itemList} to={item.to} sx={{ textAlign: 'center' }}>
+            <Link className={styles.itemList} to={item.to}>
               <ListItemText primary={item.text} />
             </Link>
           </ListItem>
         ))}
+        {isAuthenticated() &&
+          <ListItem key={-1} >
+            <Button onClick={() => {
+            logout()
+            clearPedidoId()
+            }} 
+            variant='contained' color='error' size='small'
+            className={styles.itemList}
+            >
+              Sair
+            </Button>
+          </ListItem>
+        }
       </List>
     </Box>
   )

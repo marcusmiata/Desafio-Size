@@ -71,7 +71,7 @@ function CadastroEmpresa() {
   }
 
   return (
-    <Container className={styles.containerCadastro} sx={{ py: 4 }}>
+    <Container className={styles.containerCadastro} sx={{ p: 5 }}>
       <EmpresaForm handleSubmit={criarEmpresa} loading={loading} />
     </Container>
   )

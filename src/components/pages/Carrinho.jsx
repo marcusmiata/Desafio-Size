@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react'
 //Material UI
 import { Box } from '@mui/material'
 
+//Estilos
 import styles from './Carrinho.module.css'
 
 function Carrinho() {
@@ -81,6 +82,7 @@ function Carrinho() {
       if (!response.ok) throw new Error('Falha ao remover pedido')
       clearPedidoId()
       setNotas(null)
+      setIsBelow(true)
       setText('Carrinho esvaziado')
       setType('success')
       setTimer(true)
@@ -174,7 +176,7 @@ function Carrinho() {
             <p>Total que você receberá:<span className={(!isBelow) ? styles.vermelho : styles.verde}>{formato(notas.total_liquido)}</span></p>
           </header>
 
-          <Box className={styles.containerNotas} component='section' sx={{ bgcolor: 'background.container' }}>
+          <Box className={styles.containerNotas} component='section' sx={{ p:3, bgcolor: 'background.container' }}>
             {notas.notas_fiscais.length > 0 ? (
               notas.notas_fiscais.map((nota, index) => (
                 <CardNota

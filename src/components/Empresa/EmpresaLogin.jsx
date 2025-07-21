@@ -27,6 +27,7 @@ function EmpresaLogin({ handleSubmit }) {
       return
     }
     handleSubmit(cnpj)
+    setCnpj('')
   }
 
   function handleChange(e) {
@@ -62,7 +63,8 @@ function EmpresaLogin({ handleSubmit }) {
         />
       }
 
-      <p>Empresa não cadastrada?<Link to='/cadastrarEmpresa'>Cadastre-se</Link></p>
+      <p>Empresa não cadastrada?</p>
+      <Link to='/cadastrarEmpresa'>Cadastre-se</Link>
     </form>
   )
 }

@@ -1,11 +1,11 @@
 {
   "empresas": [
     {
-      "id": "1081",
+      "id": "75c8",
       "faturamento": "10000",
-      "empresa": "Empresa Teste",
-      "cnpj": "11111111111111",
-      "ramo": "Servicos",
+      "empresa": "Empresa cypress",
+      "cnpj": "66666666666666",
+      "ramo": "Produtos",
       "limite": 5000
     }
   ],
@@ -31,6 +31,66 @@
       ],
       "total_bruto": 5000,
       "total_liquido": 4932.28580910339
+    },
+    {
+      "id": "26f2",
+      "empresa": "Empresa cypress",
+      "cnpj": "66666666666666",
+      "limite": 5000,
+      "notas_fiscais": [
+        {
+          "numero": "151515",
+          "valor_bruto": 2000,
+          "valor_liquido": 1972.914323641356,
+          "vencimento": "30-07-2025"
+        }
+      ],
+      "total_bruto": 2000,
+      "total_liquido": 1972.914323641356
+    },
+    {
+      "id": "83cc",
+      "empresa": "Empresa cypress",
+      "cnpj": "66666666666666",
+      "limite": 5000,
+      "notas_fiscais": [
+        {
+          "numero": "151515",
+          "valor_bruto": 2000,
+          "valor_liquido": 1972.914323641356,
+          "vencimento": "30-07-2025"
+        },
+        {
+          "numero": "222222",
+          "valor_bruto": 30000,
+          "valor_liquido": 29593.714854620343,
+          "vencimento": "30-07-2025"
+        },
+        {
+          "numero": "151515",
+          "valor_bruto": 2000,
+          "valor_liquido": 1972.914323641356,
+          "vencimento": "30-07-2025"
+        }
+      ],
+      "total_bruto": 34000,
+      "total_liquido": 33539.543501903056
+    },
+    {
+      "id": "9e91",
+      "empresa": "Empresa cypress",
+      "cnpj": "66666666666666",
+      "limite": 5000,
+      "notas_fiscais": [
+        {
+          "numero": "151515",
+          "valor_bruto": 2000,
+          "valor_liquido": 1972.914323641356,
+          "vencimento": "30-07-2025"
+        }
+      ],
+      "total_bruto": 2000,
+      "total_liquido": 1972.9143236413547
     }
   ]
 }

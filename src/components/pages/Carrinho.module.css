@@ -17,7 +17,7 @@ main {
 }
 
 .containerNotas {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   padding: 1em;
   display: flex;
@@ -34,9 +34,9 @@ main {
 }
 
 .vazio {
-  width: 80%;
   margin: 6em auto;
-  padding: 1em;
+  padding: 3em;
+  width: 95%;
   background-color: gainsboro;
   display: flex;
   flex-direction: column;

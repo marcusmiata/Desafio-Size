@@ -73,9 +73,9 @@ Sistema que simula antecipação de crédito para empresas, permitindo que receb
 
 ### Instalação
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/Desafio.git
-cd Desafio
+# Clone o repositório com ssh ou https
+git clone https://github.com/marcusmiata/Desafio-Size.git
+cd Desafio-Size
 
 # Instale as dependências
 npm install

@@ -1,6 +1,7 @@
 //Componentes internos
 import Input from '../form/Input'
 import SelectCustomizado from '../form/Select'
+import Message from '../layout/Message'
 
 //Bibliotecas externas
 import { useState } from 'react'
@@ -13,17 +14,28 @@ import Button from '@mui/material/Button'
 
 function EmpresaForm({handleSubmit, loading}){
   const [empresa, setEmpresa] = useState({faturamento: 1000})
+  const [message, setMessage] = useState('')
+  const [timer, setTimer] = useState(false)
+
 
   const ramos = ["Produtos", "Servicos"]
 
   const submit = (e) => {
     e.preventDefault()
     if(empresa.faturamento < 1000){
-      alert('O minimo de faturamento Mensal da empresa é R$1000,00')
+      setMessage('O faturamento minímo para se cadastrar é R$1000,00')
+      setTimer(true)
+      setTimeout(() => {
+        setTimer(false)
+      }, 3000)
       return
     }
     if(!empresa.empresa || !empresa.cnpj || !empresa.faturamento || !empresa.ramo ){
-      alert("Preencha todos os campos")
+      setMessage('O ramo também precisa ser escolhido')
+      setTimer(true)
+      setTimeout(() => {
+        setTimer(false)
+      }, 3000)
       return
     }
     if(empresa.cnpj.length < 14){
@@ -82,6 +94,13 @@ function EmpresaForm({handleSubmit, loading}){
       valor={empresa.ramo || ''}
       disabled={loading}
     />
+    {
+      <Message
+        text={message}
+        type='error'
+      />
+    }
+
     <Button variant="contained" type='submit' sx={{display:'block', margin: '1em auto'}}>Cadastrar</Button>
     </form>
   )
