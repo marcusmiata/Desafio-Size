@@ -14,6 +14,7 @@ export function PedidoProvider({ children }) {
   }
 
   const clearPedidoId = () => {
+    if(!idPedido) return
     setIdPedido(null)
     localStorage.removeItem('id')
   }

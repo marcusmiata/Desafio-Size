@@ -48,7 +48,7 @@ const navItemsDeslogado = [
 
 function Navbar() {
   const { isAuthenticated, logout } = useAuth()
-  const { clearPedidoId } = usePedido()
+  const { idPedido, clearPedidoId } = usePedido()
 
   const [mobileOpen, setMobileOpen] = useState(false)
   const [navItems, setNavItems] = useState(navItemsLogado)
@@ -59,6 +59,36 @@ function Navbar() {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState)
+  }
+
+  const removerPedido = async () => {
+    if (!idPedido) return
+
+    try {
+      setIsLoading(true)
+      const response = await fetch(`http://localhost:5000/pedidos/${idPedido}`, {
+        method: "DELETE",
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+
+      if (!response.ok) throw new Error('Falha ao remover pedido')
+      clearPedidoId()
+      setNotas(null)
+      setIsBelow(true)
+      setText('Carrinho esvaziado')
+      setType('success')
+      setTimer(true)
+      setTimeout(() => {
+        setTimer(false)
+      }, 3000)
+    } catch (err) {
+      console.error("Erro ao remover pedido")
+      alert('Erro ao remover pedido')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const drawer = (
@@ -80,6 +110,7 @@ function Navbar() {
             <Button onClick={() => {
             logout()
             clearPedidoId()
+            removerPedido()
             }} 
             variant='contained' color='error' size='small'
             className={styles.itemList}
@@ -125,6 +156,7 @@ function Navbar() {
               <Button onClick={() => {
                 logout()
                 clearPedidoId()
+                removerPedido()
               }} variant='contained' color='error' size='small'>Sair</Button>
             }
           </Box>

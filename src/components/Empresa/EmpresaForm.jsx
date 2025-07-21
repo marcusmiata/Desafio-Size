@@ -94,7 +94,7 @@ function EmpresaForm({handleSubmit, loading}){
       valor={empresa.ramo || ''}
       disabled={loading}
     />
-    {
+    {timer &&
       <Message
         text={message}
         type='error'

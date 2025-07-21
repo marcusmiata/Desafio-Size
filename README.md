@@ -89,3 +89,16 @@ npm run backend
 #Em outro terminal
 npm run dev
 ```
+
+### Testes com cypress
+Abra outro terminal
+```bash
+cd Desafio-Size
+npm run cypress:web
+```
+
+E teste os scripts na seguinte ordem
+1. cadastro
+2. login
+3. novaNota
+4. finalizar
