@@ -67,7 +67,7 @@ Sistema que simula antecipação de crédito para empresas, permitindo que receb
 <h2 id="-como-executar">🚀 Como Executar</h2>
 
 ### Pré-requisitos
-- Node.js (v18+)
+- Node.js (v20.17.0)
 - npm ou yarn
 - Portas 5000 (backend) e 5173 (frontend) disponíveis
 
